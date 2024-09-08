@@ -1,6 +1,7 @@
 const nodemailer = require("nodemailer");
 const cloudinary = require('cloudinary').v2;
 
+
 const mailSender = async (email, title, body) => {
     try {
         console.log("Inside Mail Sender")
