@@ -25,7 +25,7 @@ function UpdatePassword() {
         e.preventDefault();
         // const { token } = useParams();
         console.log(console.log("inside update password page ", "password : ", password, "confirmPassword : ", confirmPassword, " token : ", token))
-        dispatch(resetPassword(password, confirmPassword, token))
+        dispatch(resetPassword(password, confirmPassword, token, navigate))
     }
 
     return (

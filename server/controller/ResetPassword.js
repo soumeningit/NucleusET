@@ -54,7 +54,9 @@ exports.resetPasswordToken = async (req, res) => {
         );
         console.log("DETAILS", updatedDetails);
 
-        const url = process.env.NODE_ENV === "production" ? `https://nucleuset-3jhf.onrender.com/${token}` : `http://localhost:3000/update-password/${token}`;
+        const url = process.env.NODE_ENV === "production"
+            ? `https://nucleuset-3jhf.onrender.com/update-password/${token}`
+            : `http://localhost:3000/update-password/${token}`;
 
         await mailSender(
             email,

@@ -173,7 +173,7 @@ export function resetPassworedToken(email, setisemailSent) {
   }
 }
 
-export function resetPassword(password, confirmPassword, token) {
+export function resetPassword(password, confirmPassword, token, navigate) {
   return async (dispatch) => {
 
     console.log("Inside reset Password..")
@@ -191,6 +191,7 @@ export function resetPassword(password, confirmPassword, token) {
 
       console.log("Response : ", response);
       toast.success("Password updated successfully")
+      navigate("/login")
     }
     catch (e) {
       toast.error("Password Update Failed")
