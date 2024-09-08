@@ -34,7 +34,7 @@ app.use(cookieParser());
 
 const allowedOrigins = [
     "http://localhost:3000", // For local development
-    "https://talk-time-vqvp.onrender.com"  // For Render deployment
+    "https://nucleuset-3jhf.onrender.com"  // For Render deployment
 ];
 
 app.use(
