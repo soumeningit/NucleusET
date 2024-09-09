@@ -234,7 +234,7 @@ const ShowNotifications = () => {
     };
 
     return (
-        <div className="relative translate-x-52">
+        <div className="relative ">
             <button onClick={toggleNotifications}>
                 <FaBell size={24} />
                 {unreadCount > 0 && (
