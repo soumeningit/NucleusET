@@ -42,7 +42,7 @@ function LogInForm(props) {
         <div className=''>
             <form onSubmit={submitHandeler} action="#" className='flex flex-col w-full gap-y-4 mt-6'>
                 <label className='w-full'>
-                    <div className='text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem]'>
+                    <div className='text-[0.875rem] text-richblack-200 mb-1 leading-[1.375rem]'>
                         Email Address<sup className='text-pink-200'>*</sup>
                     </div>
                     <input type="email"
@@ -56,7 +56,7 @@ function LogInForm(props) {
                 </label>
 
                 <label className='w-full relative'>
-                    <div className='text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem]'>
+                    <div className='text-[0.875rem] text-richblack-400 mb-1 leading-[1.375rem]'>
                         Password
                         <sup className='text-pink-200'>*</sup>
                     </div>

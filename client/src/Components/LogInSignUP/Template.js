@@ -8,8 +8,8 @@ import { FcGoogle } from "react-icons/fc";
 function Template({ heading, description1, description2, img, formtype, setIsLoggedIn }) {
     return (
         <div className='flex w-11/12 max-w-[1160px] mx-auto py-12 gap-y-0 gap-x-12 justify-between'>
-            <div className='w-11/12 max-w-[450px] mx-0 text-white'>
-                <h2 className='text-richblack-5 font-semibold text-2xl leading-[2.375rem]'>{heading}</h2>
+            <div className='w-11/12 max-w-[450px] mx-0 text-pure-greys-100'>
+                <h2 className='text-richblack-400 font-semibold text-2xl leading-[2.375rem]'>{heading}</h2>
                 <div className='text-md mt-4'>
                     <span className='text-richblack-100 '>{description1}</span>
                     <br />

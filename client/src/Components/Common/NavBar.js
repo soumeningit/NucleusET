@@ -63,7 +63,7 @@ function NavBar() {
                     </Link>
                 </div>
                 <nav>
-                    <ul className='flex items-center text-richblack-400 gap-x-4'>
+                    <ul className='flex items-center text-richblack-400 gap-x-4 translate-x-5'>
                         {
                             NavbarLinks.map((link, index) => {
                                 return (
