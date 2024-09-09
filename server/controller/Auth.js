@@ -18,10 +18,16 @@ exports.sendOTPController = async (req, res) => {
         const exsistingUser = await User.findOne({ email });
         // if exsist then send a response
         if (exsistingUser) {
-            return res.status(400)
+            const data = {
+                status: false,
+                message: "User already exsist",
+                user: -1
+            }
+            return res
                 .json({
                     success: false,
-                    message: "User already exsisit"
+                    message: "User already exsist",
+                    data
                 })
         }
         // if not exsist then create a new otp

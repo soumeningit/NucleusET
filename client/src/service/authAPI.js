@@ -24,9 +24,13 @@ export function sendOTP(email, navigate) {
       });
 
       console.log("Response  : ", response);
+      if (response?.data?.data?.user === -1) {
+        toast.error(response.data.message)
+        throw new Error("User  Already Exsist");
+      }
 
       if (!response) {
-        throw new Error();
+        throw new Error("OTP Send Failed");
       }
 
       toast.success("OTP sent Successfully")
@@ -35,6 +39,7 @@ export function sendOTP(email, navigate) {
       dispatch({ type: 'SEND_OTP_SUCCESS', payload: response.data.otp });
 
     } catch (error) {
+      toast.error("OTP Send Failed")
       console.log("Send OTP failed!")
       console.log(error)
     }
@@ -56,8 +61,11 @@ export function signUp(firstName, lastName, email, password,
       if (!response.data.success) {
         throw new Error(response.data.message);
       }
+      if (response.data.message === "User already exsist!") {
+        toast.error(response.data.message)
+      }
 
-      console.log("Sign Up Data : ", response);
+      // console.log("Sign Up Data : ", response);
       toast.success("Sign Up Successfull")
       navigate("/login")
 

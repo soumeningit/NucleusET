@@ -91,7 +91,7 @@ function SignUpForm() {
             <form onSubmit={submitHandler}>
                 <div className='w-full flex gap-x-5 mt-4'>
                     <label className='w-full '>
-                        <div className='text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem]'>
+                        <div className='text-[0.875rem] text-richblack-400 mb-1 leading-[1.375rem]'>
                             First Name
                             <sup className='text-pink-200'>*</sup>
                         </div>
@@ -106,7 +106,7 @@ function SignUpForm() {
                     </label>
 
                     <label className='w-full'>
-                        <div className='text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem]'>
+                        <div className='text-[0.875rem] text-richblack-400 mb-1 leading-[1.375rem]'>
                             Last Name
                             <sup className='text-pink-200'>*</sup>
                         </div>
@@ -123,7 +123,7 @@ function SignUpForm() {
 
                 <div className='mt-4'>
                     <label className='w-full'>
-                        <div className='text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem]'>
+                        <div className='text-[0.875rem] text-richblack-400 mb-1 leading-[1.375rem]'>
                             Email Address
                             <sup className='text-pink-200'>*</sup>
                         </div>
@@ -140,7 +140,7 @@ function SignUpForm() {
 
                 <div className='w-full flex gap-x-5 mt-4'>
                     <label className='w-full relative'>
-                        <div className='text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem]'>
+                        <div className='text-[0.875rem] text-richblack-400 mb-1 leading-[1.375rem]'>
                             Create Password
                             <sup className='text-pink-200'>*</sup>
                         </div>
@@ -160,7 +160,7 @@ function SignUpForm() {
                     </label>
 
                     <label className='w-full relative'>
-                        <div className='text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem]'>
+                        <div className='text-[0.875rem] text-richblack-400 mb-1 leading-[1.375rem]'>
                             Confirm Paassword
                             <sup className='text-pink-200'>*</sup>
                         </div>
