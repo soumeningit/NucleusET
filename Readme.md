@@ -34,7 +34,7 @@ Nucleus is a comprehensive online learning platform built using the MERN stack. 
 - **Payment Gateway**: Razorpay
 
 ## LiveLink
-
+<p>Since it is hosted on a free cloud service, it may take some time to load. Please wait a moment.</p>
 <a href="https://nucleuset-3jhf.onrender.com">
     <img src="https://img.icons8.com/ios-filled/50/000000/link.png" alt="Link Icon" width="20" height="20"/>
 </a>(https://nucleuset-3jhf.onrender.com)
