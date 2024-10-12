@@ -70,7 +70,7 @@ exports.contactUsEmail = (
     <body>
         <div class="container">
             <a href=""><img class="logo"
-                    src="" alt="Nucleus Logo"></a>
+                    src="server/mail/templates/logo.png" alt="Nucleus Logo"></a>
             <div class="message">Contact Form Confirmation</div>
             <div class="body">
                 <p>Dear ${firstName} ${lastName},</p>
