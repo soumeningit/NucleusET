@@ -66,7 +66,7 @@ exports.passwordReset = (url) => {
     
     <body>
         <div class="container">
-            <a href="http://localhost:3000"><img class="logo" src="" alt="Logo"></a>
+            <a href="https://nucleus-nine-zeta.vercel.app"><img class="logo" src="./logo.png" alt="Logo"></a>
             <div class="message">Password Reset Request</div>
             <div class="body">
                 <p>Hello,</p>
