@@ -34,6 +34,7 @@ app.use(cookieParser());
 
 const allowedOrigins = [
     "http://localhost:3000", // For local development
+    "https://nucleus-nine-zeta.vercel.app", // For Vercel Deployment
     "https://nucleuset-3jhf.onrender.com"  // For Render deployment
 ];
 
@@ -81,28 +82,35 @@ const __dirname1 = path.resolve();
 //         res.sendFile(path.resolve(__dirname1, "build", "index.html"))
 //     );
 // } 
-if (process.env.NODE_ENV === "production") {
-    app.use(express.static(path.join(__dirname1, "..", "/client/build")));
-    app.get("*", (req, res) =>
-        res.sendFile(path.resolve(__dirname1, "..", "client", "build", "index.html"))
-    );
-} else {
-    app.get("/", (req, res) => {
-        return res.json({
-            success: true,
-            message: "Server is running",
-        });
-    });
-}
+// if (process.env.NODE_ENV === "production") {
+//     app.use(express.static(path.join(__dirname1, "..", "/client/build")));
+//     app.get("*", (req, res) =>
+//         res.sendFile(path.resolve(__dirname1, "..", "client", "build", "index.html"))
+//     );
+// } else {
+//     app.get("/", (req, res) => {
+//         return res.json({
+//             success: true,
+//             message: "Server is running",
+//         });
+//     });
+// }
 
 // --------------------------deployment------------------------------
 
 app.get("/", (req, res) => {
     return res.json({
         success: true,
-        message: 'Your server is up and running....'
+        message: "Server is running",
     });
 });
+
+// app.get("/", (req, res) => {
+//     return res.json({
+//         success: true,
+//         message: 'Your server is up and running....'
+//     });
+// });
 
 app.listen(PORT, () => {
     console.log(`App is running at ${PORT}`)
