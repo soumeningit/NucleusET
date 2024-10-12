@@ -55,7 +55,7 @@ exports.resetPasswordToken = async (req, res) => {
         console.log("DETAILS", updatedDetails);
 
         const url = process.env.NODE_ENV === "production"
-            ? `https://nucleuset-3jhf.onrender.com/update-password/${token}`
+            ? `https://nucleus-nine-zeta.vercel.app/update-password/${token}`
             : `http://localhost:3000/update-password/${token}`;
 
         await mailSender(
