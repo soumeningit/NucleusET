@@ -56,7 +56,7 @@ exports.passwordUpdated = (email, name) => {
     <body>
         <div class="container">
             <a href="https://nucleus-nine-zeta.vercel.app"><img class="logo"
-                    src="" alt="StudyNotion Logo"></a>
+                    src="https://res.cloudinary.com/dhu8fpog1/image/upload/v1728740832/logo_nhcq2u.png" alt="StudyNotion Logo"></a>
             <div class="message">Password Update Confirmation</div>
             <div class="body">
                 <p>Hey ${name},</p>

@@ -67,7 +67,7 @@ exports.PaymentSuccessmail = (name, amount, paymentId, orderId) => {
             <p>Payment ID: ${paymentId}</p>
             <p>Order ID: ${orderId}</p>
             <p>Click the button below to start learning:</p>
-            <a href="${""}" class="button">Go to Course</a>
+            <a href="${"https://nucleus-nine-zeta.vercel.app"}" class="button">Go to Course</a>
             <p>If you have any questions or need support, please feel free to contact us.</p>
         </div>
         <div class="footer">

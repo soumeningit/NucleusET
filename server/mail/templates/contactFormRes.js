@@ -69,8 +69,8 @@ exports.contactUsEmail = (
     
     <body>
         <div class="container">
-            <a href=""><img class="logo"
-                    src="server/mail/templates/logo.png" alt="Nucleus Logo"></a>
+            <a href="https://nucleus-nine-zeta.vercel.app"><img class="logo"
+                    src="https://res.cloudinary.com/dhu8fpog1/image/upload/v1728740832/logo_nhcq2u.png" alt="Nucleus Logo"></a>
             <div class="message">Contact Form Confirmation</div>
             <div class="body">
                 <p>Dear ${firstName} ${lastName},</p>
