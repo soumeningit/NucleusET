@@ -14,7 +14,7 @@ exports.auth = async (req, res, next) => {
             req.body.token ||
             (req.header("Authorization") ? req.header("Authorization").replace("Bearer ", "") : null);
 
-        console.log("Token inside auth middleware : ", token)
+        // console.log("Token inside auth middleware : ", token)
 
         // check if token is prsent or not
         if (!token) {
@@ -28,7 +28,7 @@ exports.auth = async (req, res, next) => {
         try {
             console.log("verifing token..")
             const verifiedToken = jwt.verify(token, process.env.JWT_PRIVATEKEY);
-            console.log("Verified Token ", verifiedToken);
+            // console.log("Verified Token ", verifiedToken);
             req.user = verifiedToken;
             next();
         } catch (error) {
